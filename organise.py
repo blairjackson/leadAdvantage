@@ -1,7 +1,7 @@
 import os, pysftp
 
 def organiseFiles():
-    for file in os.listdir('/Users/blairjackson/PycharmProjects/LeadAdvantage/fixedFiles'):
+    for file in os.listdir('/Users/aaronjones/Scripts/leadAdvantage/fixedFiles'):
     	with open('LeadAdvantageCredentialsTest', 'r') as credentials:
     		sortname = file.split('_')
     		for line in credentials:

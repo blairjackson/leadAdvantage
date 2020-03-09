@@ -2,7 +2,7 @@ import os
 
 def passFiles():
 	#Get all files from downloaded folder and pass to renameFile() to be corrected
-	for file in os.listdir('/Users/blairjackson/PycharmProjects/LeadAdvantage/downloadedFiles'):
+	for file in os.listdir('/Users/aaronjones/Scripts/leadAdvantage/downloadedFiles'):
 		if file[0] == '.':
 			pass
 		else:
