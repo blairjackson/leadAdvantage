@@ -2,7 +2,7 @@ import os, pysftp
 
 def organiseFiles():
     for file in os.listdir('/Users/aaronjones/Scripts/leadAdvantage/fixedFiles'):
-    	with open('LeadAdvantageCredentialsTest', 'r') as credentials:
+    	with open('LeadAdvantageCredentials', 'r') as credentials:
     		sortname = file.split('_')
     		for line in credentials:
     			match = line.split(',')
@@ -22,8 +22,7 @@ def sendFile(filename, credentialLine):
 	print(filename)
 	print(host)
 	print(username)
-	print(password)
-	filename = '/Users/blairjackson/PycharmProjects/LeadAdvantage/fixedFiles/' + filename
+	filename = '/Users/aaronjones/Scripts/leadAdvantage/fixedFiles/' + filename
 	# filename = '/Users/blairjackson/PycharmProjects/LeadAdvantage/fixedFiles/' + filename
 	# os.chdir('/Users/blairjackson/PycharmProjects/LeadAdvantage/fixedFiles')
 

@@ -6,4 +6,4 @@ import fileHandler, organise, datetime, ftp
 
 # ftp.connect()
 fileHandler.passFiles()
-#organise.organiseFiles()
+organise.organiseFiles()
